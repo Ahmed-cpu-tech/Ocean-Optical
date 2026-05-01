@@ -1,0 +1,51 @@
+/* Custom Brand Colors */
+:root {
+  --brand-navy: #0f172a;
+  --brand-sky: #38bdf8;
+  --bg-main: #f8fafc;
+}
+
+.bg-brand-navy { background-color: var(--brand-navy) !important; }
+.text-brand-navy { color: var(--brand-navy) !important; }
+.bg-brand-sky { background-color: var(--brand-sky) !important; }
+.text-brand-sky { color: var(--brand-sky) !important; }
+
+/* Font Stubs */
+.font-outfit { font-family: 'Outfit', sans-serif; }
+.font-cairo { font-family: 'Cairo', sans-serif; }
+
+body {
+  background-color: var(--bg-main);
+  font-family: 'Outfit', sans-serif;
+  color: #475569;
+}
+
+[dir="rtl"] body {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Custom Overrides */
+.navbar {
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-scrolled {
+  background: white !important;
+  box-shadow: 0 1px 15px rgba(0,0,0,0.05);
+}
+
+.card {
+  border: 1px solid #f1f5f9;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+section {
+  padding: 5rem 0;
+}
